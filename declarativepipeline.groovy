@@ -17,7 +17,7 @@ pipeline{
         }
     }
 }
-        
+        /*
         stage('test completed'){
          steps{  
             withSonarQubeEnv(credentialsId: 'sonar-token') {
