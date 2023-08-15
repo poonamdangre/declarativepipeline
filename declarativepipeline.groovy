@@ -15,14 +15,14 @@ pipeline{
              echo'build completed'
             }
         }
-    }
-}
-        /*
+    
+
+        
         stage('test completed'){
          steps{  
             withSonarQubeEnv(credentialsId: 'sonar-token') {
      
-        /opt/apache-maven3.9.4/bin/mvn sonar:sonar   -Dsonar.projectKey=mypro  
+        /opt/apache-maven3.9.4/bin/mvn sonar:sonar   -Dsonar.projectKey=project21  
             }
 
             echo 'test completed'
