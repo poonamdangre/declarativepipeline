@@ -7,6 +7,8 @@ pipeline{
            echo 'pull completed'
             }
         }
+    }
+}
         /*
         stage('build'){
             steps{
@@ -31,7 +33,6 @@ sh'/opt/apache-maven-3.9.4/bin/mvn sonar:sonar \
             steps{
                 echo 'deploy complete'
             }
-        }
+        } 
     }
 }
-*/
