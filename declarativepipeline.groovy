@@ -7,16 +7,17 @@ pipeline{
            echo 'pull completed'
             }
         }
-    }
-}
-        /*
+
         stage('build'){
             steps{
                 
-                sh'/opt/apache-maven-3.9.4/bin/mvn  package'
+                sh'/opt/apache-maven-3.9.4/bin/mvn clean  package'
              echo'build completed'
             }
         }
+    }
+}
+        /*
         stage('test completed'){
          steps{   
             withSonarQubeEnv(installationName: 'Sonar-server', credentialsId: 'sonartoken1') {
@@ -36,4 +37,3 @@ sh'/opt/apache-maven-3.9.4/bin/mvn sonar:sonar \
         } 
     }
 }
-*/
