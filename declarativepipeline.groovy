@@ -19,12 +19,11 @@ pipeline{
 }
         
         stage('test completed'){
-         steps{   
-        
-    
-    
-/opt/apache-maven3.9.4/bin/mvn sonar:sonar   -Dsonar.projectKey=freshproject      
-
+         steps{  
+            withSonarQubeEnv(credentialsId: 'sonar-token') {
+     
+        /opt/apache-maven3.9.4/bin/mvn sonar:sonar   -Dsonar.projectKey=freshproject  
+            }
 
             echo 'test completed'
              
