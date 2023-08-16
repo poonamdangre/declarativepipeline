@@ -22,7 +22,7 @@ pipeline{
          steps{  
             withSonarQubeEnv(credentialsId: 'sonar-token') {
      
-        /opt/apache-maven3.9.4/bin/mvn sonar:sonar \
+    mvn sonar:sonar \
   -Dsonar.projectKey=jojo \
   
             }
