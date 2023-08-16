@@ -31,6 +31,8 @@ pipeline{
              
         }
         }
+    }
+}
         /*
         stage('deploy'){
             steps{
