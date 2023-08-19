@@ -23,7 +23,7 @@ pipeline{
             withSonarQubeEnv(installationName:'sonar-server',credentialsId: 'sonar-token') {
      
     sh'/opt/apache-maven-3.9.4/bin/mvn sonar:sonar \
-  -Dsonar.projectKey=javaproject'
+  -Dsonar.projectKey=mavenproject'
   echo 'test completed'
             }           
         }
