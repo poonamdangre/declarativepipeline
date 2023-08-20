@@ -16,7 +16,7 @@ pipeline{
             }
         }
     
-
+/*
         
         stage('test completed'){
          steps{  
@@ -30,7 +30,7 @@ pipeline{
         }
     }
 }
-        /*
+        */
         stage('deploy'){
             steps{
                 echo 'deploy complete'
@@ -38,4 +38,3 @@ pipeline{
         } 
     }
 }
-*/
